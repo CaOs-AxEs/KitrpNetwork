@@ -1,3 +1,3 @@
 from ubuntu:latest
 
-CMD echo "Hello World!"
+CMD echo "Docker Update"
