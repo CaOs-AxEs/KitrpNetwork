@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag jack061231/kitrp_network:$(date +%s)
     - name: Push the Docker image
-      run: docker login -u jack061231 -p ${{ secrets.DOCKER_TOKEN  }} && docker push docker/dev-environments-default:latest
+      run: docker login -u jack061231 -p ${{ secrets.DOCKER_TOKEN  }} && docker push jack061231/kitrp_network:latest
 
