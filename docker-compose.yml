@@ -2,7 +2,7 @@ version: "3"
 
 services:
   minecraft:
-    image: docker/dev-environments-default
+    image: itzg/minecraft-server
     volumes:
       - minecraftdata:/data
       - /home/Minecraft/plugins:/plugins

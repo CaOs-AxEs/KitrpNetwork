@@ -17,5 +17,5 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag jack061231/kitrp_network:$(date +%s)
     - name: Push the Docker image
-      run: docker login -u jack061231 -p ${{ secrets.DOCKER_TOKEN  }} && docker push jack061231/kitrp_network:b1787b818d58a069822830eb9c7c52aa95cda2ee69e3cfcc36e2d30136cc0b26
+      run: docker login -u jack061231 -p ${{ secrets.DOCKER_TOKEN  }} && docker push jack061231/kitrp_network:1f503c1fddbcb4d0ce2d3338634ba64e8841237fb2f954f0b279cee9ce269034
 
